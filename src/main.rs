@@ -32,4 +32,39 @@ fn main() {
     };
 
     println!("\nThe result is {result}");
-}
+
+        println!("\n#### Loop with a Label"); //also cut-and-paste
+    counter=0;
+    'counting_up: loop {
+        println!("Counter={counter}");
+        let mut remaining=10;
+        loop {
+            if counter==2 {
+                break 'counting_up;
+            }
+            println!("\tRemaining={remaining}");
+            if remaining==9 { //was 0, but changed to 9 just to keep the output small. I get the point. 
+                break;
+            }
+
+            remaining -=1;
+        }
+        counter+=1;
+    }
+        println!("## While Loops");
+        let mut number=30;
+
+        while number!=0 {
+            print!("{number}...");
+            number-=1;
+        }
+        println!("DONE!");
+
+        println!("\n## For Loops");
+        let mut cats=["Beso","Luna","Nami"]; //May need to double back to arrays a bit.
+
+        for kitty in cats {
+            println!("Cat is {kitty}");
+        }
+
+    }
