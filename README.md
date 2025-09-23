@@ -8,3 +8,4 @@ This will probably incorporate snippets of code I previously used.
 * Mutable variables:
     * I can do `let x=5` then `let x=6`--effectively, a new variable. I can't do `x=7`--`x` is *immutable*.
     * If I do `let mut x=6`, then, it's *mutable*--I can subsequently do `x=7`.
+* I did some copy-and-paste to do a random number generator. A bit ahead, but why not?
