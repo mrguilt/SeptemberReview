@@ -1,10 +1,15 @@
 use rand::Rng; // Import the Rng trait
-
+use std::env; //Standard library. To get arguments.
 fn main() {
     let mut rng = rand::thread_rng(); // Get a thread-local random number generator
 
     println!("September Review of Rust!");
     println!("--------- ------ -- -----");
+
+    println!("\n## Read Arguments");
+    let args: Vec<String> = env::args().collect();
+    let NumberToCheck:i32 = args[1].parse().unwrap();
+    println!("Number to Check: {NumberToCheck}");
 
     println!("\n## Control Flow");
     println!("### If Statements");
@@ -12,7 +17,7 @@ fn main() {
 
     println!("round 1: {number}");
     if number<=5 {
-        println!("Under Five");
+        println!("At or Under Five");
     } else {
         println!("Over 5");
     }
@@ -81,12 +86,14 @@ fn main() {
         let mut newnumb=rng.gen_range(1..20);
         println!("Rolling a D20...let's try {newnumb}");
         overfive(newnumb);
+        println!("From the commandline: {NumberToCheck}");
+        overfive(NumberToCheck);
 
     }
 
     fn overfive(x: i32) {
         if x<=5 {
-            println!("\tUnder Five");
+            println!("\tAt or Under Five");
         } else {
             println!("\tOver Five");
         }
