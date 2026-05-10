@@ -1,1 +1,1 @@
-/Users/chbarr/programming/rust/SeptemberReview/target/debug/SeptemberReview: /Users/chbarr/programming/rust/SeptemberReview/src/main.rs
+/Users/chbarr/programming/learn-rust/SeptemberReview/target/debug/SeptemberReview: /Users/chbarr/programming/learn-rust/SeptemberReview/src/main.rs

@@ -10,3 +10,9 @@ This will probably incorporate snippets of code I previously used.
     * If I do `let mut x=6`, then, it's *mutable*--I can subsequently do `x=7`.
 * I did some copy-and-paste to do a random number generator. A bit ahead, but why not?
     * Likewise: arguments, and converting a string to an integer. 
+
+## 2026-05-10 Back at It
+
+Took a bit longer of a break than I anticipated. Trying ot get tracking--again. 
+
+* Added a check to see if there are enough arguments, and exiting gracefully. 

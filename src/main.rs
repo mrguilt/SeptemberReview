@@ -1,5 +1,7 @@
 use rand::Rng; // Import the Rng trait
 use std::env; //Standard library. To get arguments.
+use std::process; //exit!
+
 fn main() {
     let mut rng = rand::thread_rng(); // Get a thread-local random number generator
 
@@ -7,6 +9,12 @@ fn main() {
     println!("--------- ------ -- -----");
 
     println!("\n## Read Arguments");
+    let argcount=env::args().len();
+    println!("Number of Arguements: {argcount}");
+    if argcount==1 {
+        println!("Too Few Arguments!");
+        process::exit(1);
+    }
     let args: Vec<String> = env::args().collect();
     let NumberToCheck:i32 = args[1].parse().unwrap();
     println!("Number to Check: {NumberToCheck}");
