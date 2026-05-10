@@ -97,12 +97,26 @@ fn main() {
         println!("From the commandline: {NumberToCheck}");
         overfive(NumberToCheck);
 
+    ///trying my own function
+        println!("Is 7 over or under 4?");
+        overunderany(7,4);
+
     }
 
+    //OG Check
     fn overfive(x: i32) {
         if x<=5 {
             println!("\tAt or Under Five");
         } else {
             println!("\tOver Five");
+        }
+    }
+
+    //New Check
+    fn overunderany(x: i32,t: i32) {
+        if x<=t { 
+            println!("\tAt of Under {}",t);
+        } else {
+            println!("\tOver {}",t);
         }
     }
