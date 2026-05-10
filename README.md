@@ -16,3 +16,4 @@ This will probably incorporate snippets of code I previously used.
 Took a bit longer of a break than I anticipated. Trying ot get tracking--again. 
 
 * Added a check to see if there are enough arguments, and exiting gracefully. 
+* Trying to get `git` going right again.
